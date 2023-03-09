@@ -1,0 +1,53 @@
+.buttonContainer {
+  overflow: visible;
+  border-style: none;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 0;
+  background-color: #b94841;
+  color: #fff;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  position: relative;
+  display: inline-block;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  transform: translate(0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: -10px 9px 0px 0px rgb(219 209 189);
+  padding: 0rem 1rem;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.buttonContainer h2 {
+  position: relative;
+  z-index: 3;
+  font-family: 'Nine Tsuki';
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.buttonContainer.alternate {
+    background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+  }
+
+@media (max-width: 1023px) {
+  .buttonContainer {
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .buttonContainer {
+    display: block;
+    text-align: center;
+  }
+}

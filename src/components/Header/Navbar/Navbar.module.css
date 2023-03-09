@@ -1,0 +1,299 @@
+.navbarContainer {
+  background-color: transparent;
+  background-color: black;
+  z-index: 100;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 0px;
+  position: fixed;
+  padding-bottom: 0rem;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoContainer {
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+}
+.logo a {
+  text-decoration: none;
+}
+
+.itemsDesktop {
+  display: none;
+  align-items: center;
+}
+
+.itemsListDesktop {
+  display: flex;
+  margin-top: 0;
+}
+
+.itemsMobile {
+  display: flex;
+}
+
+.register {
+  text-align: right;
+  flex-grow: 1;
+  font-family: Arial;
+  display: none;
+}
+
+.register button {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  height: 60px;
+  min-width: 180px;
+  font-family: sans-serif;
+  transition: color 0.25s ease;
+  position: relative;
+  background-image: url(/assets/images/registerBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  
+}
+
+.navbarContainer .navbar {
+  border-bottom: none;
+}
+
+.navbarContainer .logoContainer {
+  flex-grow: 1;
+}
+
+.navbarContainer .itemsDesktop {
+  margin-left: 40px;
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .register button {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    height: 70px;
+    width: 210px;
+    font-family: sans-serif;
+    transition: color 0.25s ease;
+    position: relative;
+    background-image: url(/assets/images/registerBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    padding: 0 16px;
+  }
+  .register > .wallet-adapter-button-trigger {
+    background-color: transparent !important;
+  }
+}
+@media (min-width: 1024px) {
+  .navbarContainer {
+    padding-top: 2rem;
+    background-color: transparent;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+  }
+  .navbar {
+    align-items: flex-end;
+    height: 100%;
+    border-bottom: 4px #b94841 solid;
+  }
+  .itemsDesktop {
+    display: flex;
+  }
+  .itemsMobile {
+    display: none;
+  }
+  .register {
+    display: block;
+  }
+  .navbarContainer .logoContainer {
+    flex-grow: 0;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+/*  HAMBURGUER */
+
+.line {
+  background-color: red;
+}
+@media (max-width: 1200px) {
+  .navQText {
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .cNavQText {
+    padding: 15px;
+  }
+  .textDisplay.dark {
+    font-size: 220px;
+  }
+
+  .textDisplayCopy {
+    font-size: 220px;
+  }
+  .sectionDisplay.left {
+    top: 0;
+  }
+  .sectionDisplay.right {
+    top: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .hamburgerLines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nfts {
+    padding: 20px;
+  }
+
+  .hamburgerLines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .hamburgerLines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburgerLines .line2 {
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .hamburgerLines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .line1.checked {
+    transform: rotate(45deg);
+  }
+
+  .line2.checked {
+    transform: scaleY(0);
+  }
+
+  .line3.checked {
+    transform: rotate(-45deg);
+  }
+  .textDisplay.dark {
+    font-size: 180px;
+  }
+
+  .textDisplayCopy {
+    font-size: 160px;
+  }
+}
+
+.left {
+  animation: appearLeft 0.35s linear;
+}
+
+.fromLeft {
+  left: 0;
+  animation: appearLeft 0.35s linear;
+  min-height: 100vh;
+  max-height: max-content;
+}
+
+@keyframes appearLeft {
+  from {
+    left: -100vw;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes dissappearLeft {
+  from {
+    left: 0vw;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
+.navQTextMobile {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  line-height: 6.6vw;
+  width: calc(100% - 60px);
+  transition: color 0.5s ease;
+  margin: 0 auto 16px;
+  padding-bottom: 6px;
+  padding-left: 3px;
+  border-bottom: 2px solid #b94841;
+}
+.navQTextMobile:hover,
+.navQTextMobile:active {
+  color: #b94841;
+}
+.navMobile {
+  background-color: #17161b;
+  padding-top: 20px;
+  display: flex;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 50;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,81 @@
+.cNavItem {
+  font-size: 19.2px;
+  line-height: 25.6px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  margin-top: 1px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+}
+.navQText {
+  color: #fff;
+  font-size: 17.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Arial;
+  transition: color 0.5s ease;
+}
+.navQText:hover {
+  color: #fb7f7f;
+}
+
+.cNavQText {
+  padding: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .navQText {
+    color: #fff;
+    font-size: 12.8px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .cNavQText {
+    padding: 15px;
+  }
+}
+
+.navQTextMobile,
+.navQTextMobile > button {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 6vw;
+  line-height: 6.6vw;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+  padding: 0;
+  height: initial;
+}
+.navQTextMobile {
+  width: calc(100% - 60px);
+  margin: 0 auto 16px;
+  padding-bottom: 6px;
+  padding-left: 3px;
+  border-bottom: 2px solid #b94841;
+}
+.navQTextMobile div button {
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 6vw;
+  height: unset;
+  line-height: 6.6vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.navQTextMobile div button i {
+  margin-left: 12px;
+}
+.navQTextMobile ul {
+  right: -30px;
+  top: 140%;
+}
+
+.navQTextMobile:hover,
+.navQTextMobile:active {
+  color: #b94841;
+}
